@@ -18,6 +18,9 @@
     "bun",
     "cli"
   ],
+  "bin": {
+    "figma-comments": "./figma-comments.ts"
+  },
   "scripts": {
     "export": "bun figma-comments.ts"
   },

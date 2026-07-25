@@ -33,12 +33,33 @@ The official Figma MCP server does not support reading comments. This tool fills
 
 ## Installation
 
+No npm registry needed — install as a global CLI straight from GitHub:
+
+```bash
+bun install -g github:BitByBit-B3/figma-comments-export
+```
+
+That gives you a `figma-comments` command anywhere:
+
+```bash
+FIGMA_PAT=figd_your_token_here figma-comments "https://www.figma.com/design/AbC123xyz/My-File"
+```
+
+Or skip installing entirely — it's a single file, just download and run:
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/BitByBit-B3/figma-comments-export/main/figma-comments.ts
+bun figma-comments.ts <figma-url>
+```
+
+Or clone the repo:
+
 ```bash
 git clone https://github.com/BitByBit-B3/figma-comments-export.git
 cd figma-comments-export
 ```
 
-Add your Figma personal access token to `.env` (Bun loads it automatically):
+Set your Figma personal access token either as an environment variable (`export FIGMA_PAT=...`) or in a `.env` file in the directory you run from (Bun loads it automatically):
 
 ```bash
 echo 'FIGMA_PAT=figd_your_token_here' > .env
@@ -51,15 +72,17 @@ To get a PAT: Figma → **Settings → Security → Personal access tokens** →
 ## Usage/Examples
 
 ```bash
-bun figma-comments.ts "https://www.figma.com/design/AbC123xyz/My-File"
+figma-comments "https://www.figma.com/design/AbC123xyz/My-File"
 # ✓ 12 threads, 34 comments → AbC123xyz-comments.json
 ```
 
 A raw file key and an optional output path also work:
 
 ```bash
-bun figma-comments.ts AbC123xyz feedback.json
+figma-comments AbC123xyz feedback.json
 ```
+
+(If you downloaded or cloned instead of installing globally, run `bun figma-comments.ts` with the same arguments.)
 
 ### Arguments
 
