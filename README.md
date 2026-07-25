@@ -10,11 +10,11 @@
 
 ## Features
 
-- 🧵 **Nested threads** — replies are grouped under their parent comment, sorted chronologically, newest thread first (matches the Figma sidebar)
-- ✅ **Resolved state** — know which feedback is done
-- 📌 **Node IDs** — each comment includes the `node_id` it's attached to, so you can map feedback back to specific frames/layers
-- 🔗 **Accepts URLs or file keys** — paste any Figma file/design/board/proto/slides URL
-- ⚡ **Zero dependencies** — a single TypeScript file, runs with [Bun](https://bun.sh)
+- **Nested threads** — replies are grouped under their parent comment, sorted chronologically, newest thread first (matches the Figma sidebar)
+- **Resolved state** — know which feedback is done
+- **Node IDs** — each comment includes the `node_id` it's attached to, so you can map feedback back to specific frames/layers
+- **Accepts URLs or file keys** — paste any Figma file/design/board/proto/slides URL
+- **Zero dependencies** — a single TypeScript file, runs with [Bun](https://bun.sh)
 
 ## Quick start
 
@@ -65,7 +65,7 @@ bun figma-comments.ts AbC123xyz feedback.json
           "created_at": "2026-07-20T10:00:00Z",
           "resolved": false,
           "node_id": null,
-          "message": "On it 👍",
+          "message": "On it",
           "replies": []
         }
       ]
