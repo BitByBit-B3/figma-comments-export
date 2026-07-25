@@ -1,5 +1,9 @@
 # Figma Comments Export
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Runtime: Bun](https://img.shields.io/badge/Runtime-Bun-black)](https://bun.sh)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 **Export Figma comments to JSON** — a tiny CLI that pulls every comment thread from a Figma file using the Figma REST API and a personal access token (PAT).
 
 > **Why?** The official [Figma MCP server](https://www.figma.com/developers) doesn't support reading comments. If you want your AI agent (Claude Code, Cursor, etc.) or your scripts to see designer feedback, this tool exports the full comment tree — threads, replies, resolved state, and the node each comment is pinned to — as clean nested JSON.
@@ -93,6 +97,10 @@ bun figma-comments.ts <figma-url> comments.json
 - [ ] Post replies / resolve comments from the CLI
 - [ ] MCP server wrapper
 
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines, and please follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## License
 
-MIT
+[MIT](LICENSE) © BitByBit-B3

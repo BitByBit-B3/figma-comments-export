@@ -1,0 +1,27 @@
+{
+  "name": "figma-comments-export",
+  "version": "0.1.0",
+  "description": "Export Figma comments to JSON via the REST API — nested threads, replies, resolved state, node IDs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BitByBit-B3/figma-comments-export.git"
+  },
+  "keywords": [
+    "figma",
+    "comments",
+    "export",
+    "figma-api",
+    "figma-comments",
+    "mcp",
+    "design-feedback",
+    "bun",
+    "cli"
+  ],
+  "scripts": {
+    "export": "bun figma-comments.ts"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
