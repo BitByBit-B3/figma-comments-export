@@ -17,7 +17,7 @@ Thanks for your interest in improving figma-comments-export!
 
 - Keep it dependency-free — the whole point is a single-file tool that runs with just Bun.
 - Match the existing code style (TypeScript, explicit types for API shapes).
-- For new features (Markdown export, filters, MCP wrapper), open an issue first so we can discuss the approach.
+- This tool is intentionally feature-complete — bug fixes and reliability improvements are welcome, but open an issue before proposing new features.
 
 ## Submitting changes
 

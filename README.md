@@ -90,13 +90,6 @@ bun figma-comments.ts <figma-url> comments.json
 | 403 | Token expired, or missing the Comments (read) scope |
 | 404 | File doesn't exist, or your account can't access it |
 
-## Roadmap
-
-- [ ] Markdown export
-- [ ] Filter by resolved/unresolved
-- [ ] Post replies / resolve comments from the CLI
-- [ ] MCP server wrapper
-
 ## Contributing
 
 Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines, and please follow our [Code of Conduct](CODE_OF_CONDUCT.md).
